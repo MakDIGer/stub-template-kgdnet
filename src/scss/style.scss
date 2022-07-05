@@ -2,10 +2,61 @@
 
 @import "_fonts.scss";
 
-h1 {
-    font-family: "PTSanRegular";
+* {
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 14px;
 }
 
 .box {
-    height: 100vh;
+    min-height: 100vh;
+    p {
+        font-size: 24px;
+    }
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    form {
+        max-width: 540px;
+        width: 100%;
+        margin-top: 20px;
+        input {
+            width: 100%;
+        }
+        input[type="Submit"] {
+            width: 130px;
+        }
+    }
+    small {
+        color: #4F4F4F;
+        font-size: 12px;
+        .dashed {
+            border-bottom: 1px dashed #4F4F4F;
+            color: #4F4F4F;
+            font-size: 12px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.privacy {
+    margin: 15px;
+    p {
+        font: 14px "PTSansRegular", sans-serif;
+        color: #000;
+        font-weight: 400;
+    }
+    h1 {
+        font: 28px "PTSansRegular", sans-serif;
+        color: #000;
+        font-weight: bold;
+    }
+    h2 {
+        font: 24px "PTSansRegular", sans-serif;
+        color: #000;
+        font-weight: bold;
+    }
 }
