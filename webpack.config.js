@@ -5,14 +5,14 @@ const HtmlWebpackPlugin     = require('html-webpack-plugin'),
       path                  = require('path')
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/script.boundle.js',
         assetModuleFilename: 'assets/[name][ext][query]'
     },
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
     devServer: {
         static: './dist'
     },
